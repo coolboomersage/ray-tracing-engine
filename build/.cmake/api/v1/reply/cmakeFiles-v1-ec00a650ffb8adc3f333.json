@@ -1,0 +1,1128 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/4.2.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/4.2.2/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/4.2.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/4.2.2/CMakeRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeRCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-windres.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-C-ABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVMinDepVersions.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVUtils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/vars/EnableModeVars.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLanguage.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/4.2.2/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeASMLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/platforms/OpenCV-Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindGit.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDownload.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectCXXCompiler.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVVersion.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/core/include/opencv2/core/version.hpp"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVInstallLayout.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectPython.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectDLPack.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVCompilerOptions.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVCompilerOptimizations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVPCHSupport.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVModule.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/TestBigEndian.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindFrameworks.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindLibsGrfmt.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindAVIF.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindOpenEXR.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/OpenEXR/OpenEXRConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/OpenEXR/OpenEXRConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/Imath/ImathConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/Imath/ImathConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/Imath/ImathTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/Imath/ImathTargets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/libdeflate/libdeflate-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/libdeflate/libdeflate-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/libdeflate/libdeflate-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/libdeflate/libdeflate-targets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/OpenEXR/OpenEXRTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/msys64/mingw64/lib/cmake/OpenEXR/OpenEXRTargets-release.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindLibsGUI.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindLibsVideo.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindLibsPerf.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindLAPACK.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVFindProtobuf.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectFlatbuffers.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectOpenCL.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/checks/opencl.cpp"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectDirectX.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/checks/directx.cpp"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/checks/directx.cpp"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectDirectML.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/checks/directml.cpp"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectVTK.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/custom_hal.hpp.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVDetectTrace.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVExtraTargets.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/cmake_uninstall.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/dnn/cmake/init.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/highgui/cmake/init.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/highgui/cmake/detect_win32ui.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/checks/win32uitest.cpp"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/videoio/cmake/init.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/videoio/cmake/detect_ffmpeg.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/ffmpeg/ffmpeg.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/external/opencv-build/3rdparty/ffmpeg/ffmpeg_version.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/videoio/cmake/detect_gstreamer.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/videoio/cmake/detect_dshow.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVGenHeaders.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/cvconfig.h.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/cvconfig.h.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/cv_cpu_config.h.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/opencv_modules.hpp.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVGenAndroidMK.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVGenConfig.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/OpenCVConfig.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/OpenCVConfig-version.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/OpenCVConfig-version.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/OpenCVConfig.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/OpenCVConfig.root-WIN32.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVGenABI.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVGenSetupVars.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/setup_vars_win32.cmd.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/setup_vars_win32.cmd.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/OpenCVPackaging.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CPack.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CPackComponent.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Templates/CPackConfig.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Templates/CPackConfig.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/zlib/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/zlib/zconf.h.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libjpeg-turbo/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libjpeg-turbo/jversion.h.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libjpeg-turbo/jconfig.h.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libjpeg-turbo/jconfigint.h.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libjpeg-turbo/simd/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLanguage.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libtiff/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/TestBigEndian.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libtiff/tif_config.h.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libtiff/tiffconf.h.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libtiff/tiffvers.h.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libwebp/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/openjpeg/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/TestBigEndian.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/openjpeg/openjp2/opj_config.h.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/openjpeg/openjp2/opj_config_private.h.cmake.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/openjpeg/openjp2/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/libpng/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/clapack/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/3rdparty/protobuf/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFiles.cmake"
+		},
+		{
+			"path" : "external/opencv-5.0.0/include/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/calib/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/core/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/dnn/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/features/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/flann/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/geometry/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/highgui/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/imgcodecs/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/imgproc/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/java/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/java/generator/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/js/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/js/generator/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/objc/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/objc/generator/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/objdetect/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/photo/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/ptcloud/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/python/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/python/bindings/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/python/test/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/stereo/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/stitching/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/ts/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/video/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/videoio/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/world/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/core/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/vs_version.rc.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/flann/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/vs_version.rc.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/dllmain.cpp.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/geometry/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/vs_version.rc.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/dllmain.cpp.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/imgproc/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/vs_version.rc.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/dllmain.cpp.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/modules/imgcodecs/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/vs_version.rc.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/cmake/templates/dllmain.cpp.in"
+		},
+		{
+			"path" : "external/opencv-5.0.0/doc/CMakeLists.txt"
+		},
+		{
+			"path" : "external/opencv-5.0.0/docs_sphinx/CMakeLists.txt"
+		},
+		{
+			"path" : "external/assimp-6.0.5/CMakeLists.txt"
+		},
+		{
+			"path" : "external/assimp-6.0.5/cmake-modules/FindPkgMacros.cmake"
+		},
+		{
+			"path" : "external/assimp-6.0.5/cmake-modules/PrecompiledHeader.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
+		},
+		{
+			"path" : "external/assimp-6.0.5/cmake-modules/assimp-plain-config.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"path" : "external/assimp-6.0.5/assimp.pc.in"
+		},
+		{
+			"path" : "external/assimp-6.0.5/include/assimp/revision.h.in"
+		},
+		{
+			"path" : "external/assimp-6.0.5/include/assimp/config.h.in"
+		},
+		{
+			"path" : "external/assimp-6.0.5/contrib/zlib/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"path" : "external/assimp-6.0.5/contrib/zlib/zlib.pc.cmakein"
+		},
+		{
+			"path" : "external/assimp-6.0.5/contrib/zlib/zconf.h.cmakein"
+		},
+		{
+			"path" : "external/assimp-6.0.5/code/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build",
+		"source" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}

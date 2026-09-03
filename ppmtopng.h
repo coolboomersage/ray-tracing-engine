@@ -1,7 +1,7 @@
 #ifndef PPMTOPNG_H
 #define PPMTOPNG_H
 
-#include <opencv2/opencv.hpp>
+#include <opencv2/imgcodecs.hpp>
 
 #include <iostream>
 

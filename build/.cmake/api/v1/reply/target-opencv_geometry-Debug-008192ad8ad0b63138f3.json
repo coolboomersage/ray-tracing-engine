@@ -1,0 +1,1238 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/libopencv_geometry500.dll"
+		},
+		{
+			"path" : "external/opencv-build/lib/libopencv_geometry500.dll.a"
+		},
+		{
+			"path" : "bin/libopencv_geometry500.pdb"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"ocv_add_library",
+			"_ocv_create_module",
+			"ocv_create_module",
+			"ocv_define_module",
+			"install",
+			"ocv_install_target",
+			"target_link_libraries",
+			"__ocv_push_target_link_libraries",
+			"ocv_target_link_libraries",
+			"add_definitions",
+			"ocv_add_module",
+			"include",
+			"include_directories",
+			"ocv_include_directories",
+			"target_include_directories",
+			"_ocv_append_target_includes"
+		],
+		"files" : 
+		[
+			"external/opencv-5.0.0/cmake/OpenCVUtils.cmake",
+			"external/opencv-5.0.0/cmake/OpenCVModule.cmake",
+			"external/opencv-5.0.0/modules/geometry/CMakeLists.txt",
+			"external/opencv-5.0.0/cmake/OpenCVCompilerOptions.cmake",
+			"external/opencv-5.0.0/CMakeLists.txt",
+			"external/opencv-5.0.0/cmake/OpenCVDetectDLPack.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1120,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 904,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 978,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1578,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 1053,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1235,
+				"parent" : 6
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 988,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1492,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1476,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 994,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1506,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1476,
+				"parent" : 12
+			},
+			{
+				"command" : 9,
+				"file" : 2,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1506,
+				"parent" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1476,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1506,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1476,
+				"parent" : 17
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 1117,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 217,
+				"parent" : 19
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 12,
+				"file" : 4,
+				"line" : 601,
+				"parent" : 21
+			},
+			{
+				"file" : 3,
+				"parent" : 22
+			},
+			{
+				"command" : 10,
+				"file" : 3,
+				"line" : 506,
+				"parent" : 23
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 922,
+				"parent" : 3
+			},
+			{
+				"command" : 12,
+				"file" : 4,
+				"line" : 598,
+				"parent" : 21
+			},
+			{
+				"file" : 5,
+				"parent" : 26
+			},
+			{
+				"command" : 14,
+				"file" : 5,
+				"line" : 3,
+				"parent" : 27
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 319,
+				"parent" : 28
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 1613,
+				"parent" : 4
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 1536,
+				"parent" : 30
+			},
+			{
+				"command" : 14,
+				"file" : 4,
+				"line" : 582,
+				"parent" : 21
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 32
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "opencv_flann::@8976bd823db3223ef1a3"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "libclapack::@1bf2ecc4f9a77d89c260"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG -std=c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "CVAPI_EXPORTS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "_WIN32_WINNT=0x0601"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "__OPENCV_BUILD=1"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/dlpack/include"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/geometry/include"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/external/opencv-build/modules/geometry"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/core/include"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/flann/include"
+				},
+				{
+					"backtrace" : 33,
+					"isSystem" : true,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				61,
+				82
+			]
+		},
+		{
+			"defines" : 
+			[
+				{
+					"define" : "CVAPI_EXPORTS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "_WIN32_WINNT=0x0601"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "__OPENCV_BUILD=1"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/dlpack/include"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/geometry/include"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/external/opencv-build/modules/geometry"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/core/include"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/flann/include"
+				},
+				{
+					"backtrace" : 33,
+					"isSystem" : true,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				81
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 16,
+			"id" : "libclapack::@1bf2ecc4f9a77d89c260"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "opencv_flann::@8976bd823db3223ef1a3"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		}
+	],
+	"id" : "opencv_geometry::@d2ed17030a49536504b1",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 7,
+				"path" : "x64/mingw/lib"
+			},
+			{
+				"backtrace" : 7,
+				"path" : "x64/mingw/bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/install"
+		}
+	},
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "opencv_flann::@8976bd823db3223ef1a3"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "opencv_flann::@8976bd823db3223ef1a3"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "opencv_flann::@8976bd823db3223ef1a3"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "opencv_flann::@8976bd823db3223ef1a3"
+		}
+	],
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-shared",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--gc-sections",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "..\\..\\lib\\libopencv_flann500.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "..\\..\\3rdparty\\lib\\liblibclapack.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "..\\..\\lib\\libopencv_core500.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "opencv_flann::@8976bd823db3223ef1a3"
+		},
+		{
+			"backtrace" : 13,
+			"fragment" : "pthread"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "libclapack::@1bf2ecc4f9a77d89c260"
+		}
+	],
+	"name" : "opencv_geometry",
+	"nameOnDisk" : "libopencv_geometry500.dll",
+	"paths" : 
+	{
+		"build" : "external/opencv-build/modules/geometry",
+		"source" : "external/opencv-5.0.0/modules/geometry"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Include\\opencv2",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Include\\opencv2\\geometry",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				5,
+				6
+			]
+		},
+		{
+			"name" : "Include\\opencv2\\geometry\\detail",
+			"sourceIndexes" : 
+			[
+				3,
+				4
+			]
+		},
+		{
+			"name" : "Src",
+			"sourceIndexes" : 
+			[
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				76,
+				77,
+				78,
+				81
+			]
+		},
+		{
+			"name" : "Src\\ptcloud",
+			"sourceIndexes" : 
+			[
+				30,
+				31,
+				32,
+				33,
+				34,
+				72,
+				73,
+				74,
+				75
+			]
+		},
+		{
+			"name" : "Src\\usac",
+			"sourceIndexes" : 
+			[
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59
+			]
+		},
+		{
+			"name" : "Src\\opencl\\kernels",
+			"sourceIndexes" : 
+			[
+				60
+			]
+		},
+		{
+			"name" : "Src\\opencl\\kernels\\autogenerated",
+			"sourceIndexes" : 
+			[
+				61,
+				62
+			]
+		},
+		{
+			"name" : "Include",
+			"sourceIndexes" : 
+			[
+				79,
+				80
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				82
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				83
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/include/opencv2/geometry.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/include/opencv2/geometry/2d.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/include/opencv2/geometry/3d.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/include/opencv2/geometry/detail/gcgraph.hpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/include/opencv2/geometry/detail/optimizer.hpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/include/opencv2/geometry/mst.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/include/opencv2/geometry/segment.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ap3p.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/approx.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/calibration_base.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/convhull.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/epnp.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/fisheye.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/five-point.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/fundam.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/geometry.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/homography_decomp.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/intersection.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ippe.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/levmarq.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/linefit.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/main.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/matchcontours.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/min_enclosing_convex_polygon.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/min_enclosing_triangle.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/moments.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/mst.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/p3p.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/pinhole.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/polynom_solver.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/normal_estimation.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/ptcloud_utils.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/region_growing_3d.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/sac_segmentation.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/sampling.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptsetreg.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/rho.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/rotcalipers.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/shapedescr.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/solvepnp.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/sqpnp.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/subdivision2d.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/triangulate.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/bundle.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/degeneracy.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/dls_solver.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/essential_solver.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/estimator.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/fundamental_solver.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/gamma_values.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/homography_solver.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/local_optimization.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/plane_solver.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/pnp_solver.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/quality.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/ransac_solvers.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/sampler.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/sphere_solver.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/termination.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac/utils.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/opencl/moments.cl",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/external/opencv-build/modules/geometry/opencl_kernels_geometry.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/external/opencv-build/modules/geometry/opencl_kernels_geometry.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ap3p.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/distortion_model.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/epnp.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/hal_replacement.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ippe.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/p3p.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/pcc.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/polynom_solver.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/precomp.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/ptcloud_utils.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/ptcloud_wrapper.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/region_growing_3d.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/ptcloud/sac_segmentation.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/rho.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/sqpnp.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/geometry/src/usac.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "build/cvconfig.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 5,
+			"path" : "build/opencv2/opencv_modules.hpp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "build/external/opencv-build/modules/geometry/vs_version.rc",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/external/opencv-build/modules/geometry/opencv_geometry_main.cpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/external/opencv-build/modules/geometry/opencl_kernels_geometry.cpp.rule",
+			"sourceGroupIndex" : 10
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

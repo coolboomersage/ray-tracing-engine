@@ -1,0 +1,128 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/msys64/mingw64/bin/libOpenEXRCore-3_3.dll"
+		},
+		{
+			"path" : "C:/msys64/mingw64/lib/libOpenEXRCore.dll.a"
+		}
+	],
+	"backtrace" : 9,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"find_package",
+			"set_target_properties"
+		],
+		"files" : 
+		[
+			"C:/msys64/mingw64/lib/cmake/OpenEXR/OpenEXRTargets.cmake",
+			"C:/msys64/mingw64/lib/cmake/OpenEXR/OpenEXRConfig.cmake",
+			"external/opencv-5.0.0/cmake/OpenCVFindOpenEXR.cmake",
+			"external/opencv-5.0.0/cmake/OpenCVFindLibsGrfmt.cmake",
+			"external/opencv-5.0.0/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 769,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 364,
+				"parent" : 2
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 13,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 6
+			},
+			{
+				"file" : 0,
+				"parent" : 7
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 102,
+				"parent" : 8
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "OpenEXR::OpenEXRCore::@51d7b4e0d2a053e6519b",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "OpenEXR::IlmThreadConfig::@51d7b4e0d2a053e6519b"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "Imath::Imath::@51d7b4e0d2a053e6519b"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "OpenEXR::IlmThreadConfig::@51d7b4e0d2a053e6519b"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "Imath::Imath::@51d7b4e0d2a053e6519b"
+		}
+	],
+	"local" : true,
+	"name" : "OpenEXR::OpenEXRCore",
+	"nameOnDisk" : "libOpenEXRCore-3_3.dll",
+	"paths" : 
+	{
+		"build" : "external/opencv-build",
+		"source" : "external/opencv-5.0.0"
+	},
+	"sources" : [],
+	"type" : "SHARED_LIBRARY"
+}

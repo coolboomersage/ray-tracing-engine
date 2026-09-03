@@ -1,0 +1,61 @@
+{
+	"abstract" : true,
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"ocv_add_external_target",
+			"include"
+		],
+		"files" : 
+		[
+			"external/opencv-5.0.0/cmake/OpenCVUtils.cmake",
+			"external/opencv-5.0.0/cmake/OpenCVDetectFlatbuffers.cmake",
+			"external/opencv-5.0.0/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 778,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1621,
+				"parent" : 3
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "ocv.3rdparty.flatbuffers::@51d7b4e0d2a053e6519b",
+	"name" : "ocv.3rdparty.flatbuffers",
+	"paths" : 
+	{
+		"build" : "external/opencv-build",
+		"source" : "external/opencv-5.0.0"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

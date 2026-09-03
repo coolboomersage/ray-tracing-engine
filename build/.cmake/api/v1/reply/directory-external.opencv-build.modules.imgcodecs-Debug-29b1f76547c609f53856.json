@@ -1,0 +1,156 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ocv_install_target",
+			"_ocv_create_module",
+			"ocv_create_module"
+		],
+		"files" : 
+		[
+			"external/opencv-5.0.0/cmake/OpenCVUtils.cmake",
+			"external/opencv-5.0.0/cmake/OpenCVModule.cmake",
+			"external/opencv-5.0.0/modules/imgcodecs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 171,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 904,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1053,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1235,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 2
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 4,
+			"component" : "dev",
+			"destination" : "x64/mingw/lib",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-build/lib/libopencv_imgcodecs500.dll.a"
+			],
+			"targetId" : "opencv_imgcodecs::@1ea52ef256d45844a904",
+			"targetIndex" : 15,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "libs",
+			"destination" : "x64/mingw/bin",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"bin/libopencv_imgcodecs500.dll"
+			],
+			"targetId" : "opencv_imgcodecs::@1ea52ef256d45844a904",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "dev",
+			"destination" : "include/opencv2",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgcodecs/include/opencv2/imgcodecs.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "dev",
+			"destination" : "include/opencv2/imgcodecs",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "dev",
+			"destination" : "include/opencv2/imgcodecs",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgcodecs/include/opencv2/imgcodecs/ios.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "dev",
+			"destination" : "include/opencv2/imgcodecs",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgcodecs/include/opencv2/imgcodecs/macosx.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "external/opencv-build/modules/imgcodecs",
+		"source" : "external/opencv-5.0.0/modules/imgcodecs"
+	}
+}

@@ -1,0 +1,773 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/libopencv_flann500.dll"
+		},
+		{
+			"path" : "external/opencv-build/lib/libopencv_flann500.dll.a"
+		},
+		{
+			"path" : "bin/libopencv_flann500.pdb"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"ocv_add_library",
+			"_ocv_create_module",
+			"ocv_create_module",
+			"ocv_define_module",
+			"install",
+			"ocv_install_target",
+			"target_link_libraries",
+			"__ocv_push_target_link_libraries",
+			"ocv_target_link_libraries",
+			"add_definitions",
+			"ocv_add_module",
+			"include",
+			"include_directories",
+			"ocv_include_directories",
+			"target_include_directories",
+			"_ocv_append_target_includes"
+		],
+		"files" : 
+		[
+			"external/opencv-5.0.0/cmake/OpenCVUtils.cmake",
+			"external/opencv-5.0.0/cmake/OpenCVModule.cmake",
+			"external/opencv-5.0.0/modules/flann/CMakeLists.txt",
+			"external/opencv-5.0.0/cmake/OpenCVCompilerOptions.cmake",
+			"external/opencv-5.0.0/CMakeLists.txt",
+			"external/opencv-5.0.0/cmake/OpenCVDetectDLPack.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1120,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 904,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 978,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1578,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 1053,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1235,
+				"parent" : 6
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 988,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1492,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1476,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 994,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1506,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1476,
+				"parent" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1506,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 1476,
+				"parent" : 14
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 1117,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 217,
+				"parent" : 16
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 12,
+				"file" : 4,
+				"line" : 601,
+				"parent" : 18
+			},
+			{
+				"file" : 3,
+				"parent" : 19
+			},
+			{
+				"command" : 10,
+				"file" : 3,
+				"line" : 506,
+				"parent" : 20
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 922,
+				"parent" : 3
+			},
+			{
+				"command" : 12,
+				"file" : 4,
+				"line" : 598,
+				"parent" : 18
+			},
+			{
+				"file" : 5,
+				"parent" : 23
+			},
+			{
+				"command" : 14,
+				"file" : 5,
+				"line" : 3,
+				"parent" : 24
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 319,
+				"parent" : 25
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 1613,
+				"parent" : 4
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 1536,
+				"parent" : 27
+			},
+			{
+				"command" : 14,
+				"file" : 4,
+				"line" : 582,
+				"parent" : 18
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 29
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG -std=c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "CVAPI_EXPORTS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "_WIN32_WINNT=0x0601"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "__OPENCV_BUILD=1"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 26,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/dlpack/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/flann/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/external/opencv-build/modules/flann"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/core/include"
+				},
+				{
+					"backtrace" : 30,
+					"isSystem" : true,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				36,
+				37,
+				42
+			]
+		},
+		{
+			"defines" : 
+			[
+				{
+					"define" : "CVAPI_EXPORTS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "_WIN32_WINNT=0x0601"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "__OPENCV_BUILD=1"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 26,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/dlpack/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/flann/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/external/opencv-build/modules/flann"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/modules/core/include"
+				},
+				{
+					"backtrace" : 30,
+					"isSystem" : true,
+					"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				41
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		}
+	],
+	"id" : "opencv_flann::@8976bd823db3223ef1a3",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 7,
+				"path" : "x64/mingw/lib"
+			},
+			{
+				"backtrace" : 7,
+				"path" : "x64/mingw/bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/install"
+		}
+	},
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		}
+	],
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-shared",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--gc-sections",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "..\\..\\lib\\libopencv_core500.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 10,
+			"id" : "opencv_core::@f66d43aec213a3b8a4ea"
+		},
+		{
+			"backtrace" : 13,
+			"fragment" : "pthread"
+		}
+	],
+	"name" : "opencv_flann",
+	"nameOnDisk" : "libopencv_flann500.dll",
+	"paths" : 
+	{
+		"build" : "external/opencv-build/modules/flann",
+		"source" : "external/opencv-5.0.0/modules/flann"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Include\\opencv2",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Include\\opencv2\\flann",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
+			]
+		},
+		{
+			"name" : "Src",
+			"sourceIndexes" : 
+			[
+				36,
+				37,
+				38,
+				41
+			]
+		},
+		{
+			"name" : "Include",
+			"sourceIndexes" : 
+			[
+				39,
+				40
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				42
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/all_indices.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/allocator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/any.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/autotuned_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/composite_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/config.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/defines.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/dist.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/dummy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/dynamic_bitset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/flann.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/flann_base.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/general.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/ground_truth.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/heap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/index_testing.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/kdtree_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/kdtree_single_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/kmeans_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/linear_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/logger.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/lsh_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/lsh_table.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/matrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/miniflann.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/nn_index.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/object_factory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/params.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/random.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/result_set.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/sampling.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/saving.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/simplex_downhill.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/include/opencv2/flann/timer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/flann/src/flann.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "external/opencv-5.0.0/modules/flann/src/miniflann.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "external/opencv-5.0.0/modules/flann/src/precomp.hpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "build/cvconfig.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : "build/opencv2/opencv_modules.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "build/external/opencv-build/modules/flann/vs_version.rc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/external/opencv-build/modules/flann/opencv_flann_main.cpp",
+			"sourceGroupIndex" : 4
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

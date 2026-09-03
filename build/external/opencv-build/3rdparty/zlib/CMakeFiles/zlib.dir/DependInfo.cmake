@@ -1,0 +1,37 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/adler32.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/compress.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/crc32.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/deflate.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/gzclose.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/gzlib.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/gzread.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/gzwrite.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/infback.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/inffast.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/inflate.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/inftrees.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/trees.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/uncompr.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.obj.d"
+  "C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/external/opencv-5.0.0/3rdparty/zlib/zutil.c" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.obj" "gcc" "external/opencv-build/3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.obj.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

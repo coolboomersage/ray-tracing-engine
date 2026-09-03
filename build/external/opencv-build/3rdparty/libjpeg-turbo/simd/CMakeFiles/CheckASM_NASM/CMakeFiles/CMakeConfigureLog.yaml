@@ -1,0 +1,1136 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:61 (_cmake_find_compiler)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_ASM_NASM_COMPILER"
+    description: "ASM_NASM compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nasm"
+      - "yasm"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/nasm.com"
+      - "C:/msys64/mingw64/bin/nasm.exe"
+      - "C:/msys64/mingw64/bin/nasm"
+      - "C:/msys64/mingw64/bin/yasm.com"
+      - "C:/msys64/mingw64/bin/yasm.exe"
+      - "C:/msys64/mingw64/bin/yasm"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft.*Macro Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is Diab using "-V" did not match "Wind River Systems":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is QCC using "-V" did not match "gcc_nto":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is Tasking using "--version" did not match "TASKING":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    message: |
+      Checking whether the ASM_NASM compiler is Renesas using "-v" did not match "(RX Family C/C\\+\\+ Compiler)|(RL78 Family Compiler)|(RH850 Family Compiler)":
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/ar.com"
+    found: "C:/msys64/mingw64/bin/ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/ranlib.com"
+    found: "C:/msys64/mingw64/bin/ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/strip.com"
+    found: "C:/msys64/mingw64/bin/strip.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/ld.com"
+    found: "C:/msys64/mingw64/bin/ld.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/nm.com"
+    found: "C:/msys64/mingw64/bin/nm.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/objdump.com"
+    found: "C:/msys64/mingw64/bin/objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/objcopy.com"
+    found: "C:/msys64/mingw64/bin/objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/readelf.com"
+    found: "C:/msys64/mingw64/bin/readelf.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/dlltool.com"
+    found: "C:/msys64/mingw64/bin/dlltool.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/addr2line.com"
+    found: "C:/msys64/mingw64/bin/addr2line.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:267 (include)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
+      - "CMakeLists.txt:21 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files (x86)/SMLNJ/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/opencv/opencv/build/include/opencv2/"
+      - "C:/msys64/mingw64/lib/"
+      - "C:/texlive/2024/bin/windows/"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/tapi.com"
+      - "C:/msys64/mingw64/bin/tapi.exe"
+      - "C:/msys64/mingw64/bin/tapi"
+      - "C:/msys64/usr/bin/tapi.com"
+      - "C:/msys64/usr/bin/tapi.exe"
+      - "C:/msys64/usr/bin/tapi"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/tapi"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/tapi"
+      - "C:/Windows/System32/tapi.com"
+      - "C:/Windows/System32/tapi.exe"
+      - "C:/Windows/System32/tapi"
+      - "C:/Windows/tapi.com"
+      - "C:/Windows/tapi.exe"
+      - "C:/Windows/tapi"
+      - "C:/Windows/System32/wbem/tapi.com"
+      - "C:/Windows/System32/wbem/tapi.exe"
+      - "C:/Windows/System32/wbem/tapi"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
+      - "C:/Windows/System32/OpenSSH/tapi.com"
+      - "C:/Windows/System32/OpenSSH/tapi.exe"
+      - "C:/Windows/System32/OpenSSH/tapi"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/tapi.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/tapi.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/tapi"
+      - "C:/Program Files (x86)/SMLNJ/bin/tapi.com"
+      - "C:/Program Files (x86)/SMLNJ/bin/tapi.exe"
+      - "C:/Program Files (x86)/SMLNJ/bin/tapi"
+      - "C:/Program Files/CMake/bin/tapi.com"
+      - "C:/Program Files/CMake/bin/tapi.exe"
+      - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Program Files/Git/cmd/tapi.com"
+      - "C:/Program Files/Git/cmd/tapi.exe"
+      - "C:/Program Files/Git/cmd/tapi"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/tapi.com"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/tapi.exe"
+      - "C:/Users/coolb/AppData/Local/Programs/Microsoft VS Code/bin/tapi"
+      - "C:/msys64/ucrt64/bin/tapi.com"
+      - "C:/msys64/ucrt64/bin/tapi.exe"
+      - "C:/msys64/ucrt64/bin/tapi"
+      - "C:/msys64/ucrt64/lib/tapi.com"
+      - "C:/msys64/ucrt64/lib/tapi.exe"
+      - "C:/msys64/ucrt64/lib/tapi"
+      - "C:/opencv/opencv/build/include/opencv2/tapi.com"
+      - "C:/opencv/opencv/build/include/opencv2/tapi.exe"
+      - "C:/opencv/opencv/build/include/opencv2/tapi"
+      - "C:/msys64/mingw64/lib/tapi.com"
+      - "C:/msys64/mingw64/lib/tapi.exe"
+      - "C:/msys64/mingw64/lib/tapi"
+      - "C:/texlive/2024/bin/windows/tapi.com"
+      - "C:/texlive/2024/bin/windows/tapi.exe"
+      - "C:/texlive/2024/bin/windows/tapi"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/tapi.com"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/tapi.exe"
+      - "C:/Users/coolb/AppData/Local/gitkraken/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:/Windows/system32"
+        - "C:\\Windows"
+        - "C:/Windows/System32/Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/Windows/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Program Files (x86)\\SMLNJ\\bin\\"
+        - "C:/Program Files/CMake/bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/coolb/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\coolb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/msys64/ucrt64/bin"
+        - "C:\\msys64\\ucrt64\\lib"
+        - "C:/opencv/opencv/build/include/opencv2"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:/msys64/mingw64/lib"
+        - "C:\\texlive\\2024\\bin\\windows"
+        - "C:/Users/coolb/AppData/Local/gitkraken/bin"
+...

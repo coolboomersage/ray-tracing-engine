@@ -1,0 +1,206 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ocv_install_target",
+			"_ocv_create_module",
+			"ocv_create_module",
+			"ocv_define_module",
+			"ocv_install_3rdparty_licenses"
+		],
+		"files" : 
+		[
+			"external/opencv-5.0.0/cmake/OpenCVUtils.cmake",
+			"external/opencv-5.0.0/cmake/OpenCVModule.cmake",
+			"external/opencv-5.0.0/modules/imgproc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1120,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 904,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1053,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1235,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 1071,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1333,
+				"parent" : 11
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 5,
+			"component" : "dev",
+			"destination" : "x64/mingw/lib",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-build/lib/libopencv_imgproc500.dll.a"
+			],
+			"targetId" : "opencv_imgproc::@8c11407352e65bc7bd20",
+			"targetIndex" : 16,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "libs",
+			"destination" : "x64/mingw/bin",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"bin/libopencv_imgproc500.dll"
+			],
+			"targetId" : "opencv_imgproc::@8c11407352e65bc7bd20",
+			"targetIndex" : 16,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "dev",
+			"destination" : "include/opencv2",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgproc/include/opencv2/imgproc.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "dev",
+			"destination" : "include/opencv2/imgproc",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgproc/include/opencv2/imgproc/bindings.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "dev",
+			"destination" : "include/opencv2/imgproc/hal",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "dev",
+			"destination" : "include/opencv2/imgproc/hal",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgproc/include/opencv2/imgproc/hal/interface.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "dev",
+			"destination" : "include/opencv2/imgproc",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"external/opencv-5.0.0/modules/imgproc/include/opencv2/imgproc/imgproc.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "licenses",
+			"destination" : "etc/licenses",
+			"paths" : 
+			[
+				{
+					"from" : "external/opencv-5.0.0/modules/imgproc/fonts/Rubik_OFL.txt",
+					"to" : "fonts-Rubik_OFL.txt"
+				}
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "external/opencv-build/modules/imgproc",
+		"source" : "external/opencv-5.0.0/modules/imgproc"
+	}
+}
