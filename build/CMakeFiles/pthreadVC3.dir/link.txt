@@ -1,2 +1,0 @@
-C:\msys64\mingw64\bin\ar.exe qc libpthreadVC3.a CMakeFiles/pthreadVC3.dir/external/pthreads4w/pthread.c.obj
-C:\msys64\mingw64\bin\ranlib.exe libpthreadVC3.a
