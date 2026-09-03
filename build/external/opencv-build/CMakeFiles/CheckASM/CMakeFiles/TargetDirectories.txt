@@ -1,2 +1,0 @@
-C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/external/opencv-build/CMakeFiles/CheckASM/CMakeFiles/edit_cache.dir
-C:/Users/coolb/OneDrive/Desktop/ray tracing engine GPU port/build/external/opencv-build/CMakeFiles/CheckASM/CMakeFiles/rebuild_cache.dir
