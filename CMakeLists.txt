@@ -13,6 +13,7 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_opencv_apps OFF CACHE BOOL "" FORCE)
 set(BUILD_opencv_python_bindings_generator OFF CACHE BOOL "" FORCE)
 set(BUILD_JAVA OFF CACHE BOOL "" FORCE)
+set(WITH_OPENEXR OFF CACHE BOOL "" FORCE)
 
 set(ASSIMP_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(ASSIMP_BUILD_SAMPLES OFF CACHE BOOL "" FORCE)
@@ -24,33 +25,20 @@ set(ASSIMP_WARNINGS_AS_ERRORS OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/opencv-5.0.0 external/opencv-build EXCLUDE_FROM_ALL)
 add_subdirectory(external/assimp-6.0.5 external/assimp-build EXCLUDE_FROM_ALL)
 
-add_library(pthreadVC3 STATIC external/pthreads4w/pthread.c)
-target_include_directories(pthreadVC3 PUBLIC external/pthreads4w)
-target_compile_definitions(pthreadVC3 PUBLIC
-    HAVE_CONFIG_H
-    __PTW32_BUILD_INLINED
-    __PTW32_CLEANUP_C
-    __PTW32_STATIC_LIB
-)
-if(CMAKE_SIZEOF_VOID_P EQUAL 8)
-    target_compile_definitions(pthreadVC3 PUBLIC __PTW32_ARCHAMD64)
-else()
-    target_compile_definitions(pthreadVC3 PUBLIC __PTW32_ARCHX86)
-endif()
-if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
-    target_compile_options(pthreadVC3 PRIVATE -include stdint.h)
-endif()
-
 add_executable(ray_tracing_engine main.cpp)
 target_link_libraries(ray_tracing_engine PRIVATE
     opencv_core
     opencv_imgcodecs
     assimp::assimp
-    pthreadVC3
 )
 target_include_directories(ray_tracing_engine PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/external/stb
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/opencv-5.0.0/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/opencv-5.0.0/modules/core/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/external/opencv-5.0.0/modules/imgcodecs/include
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_BINARY_DIR}
 )
 
 if(MSVC)

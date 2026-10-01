@@ -6,6 +6,8 @@
 #include <iostream>
 #include <limits>
 #include <memory>
+#include <random>
+#include <atomic>
 
 
 // C++ Std Usings
@@ -26,7 +28,11 @@ inline double degrees_to_radians(double degrees) {
 
 inline double random_double() {
     // Returns a random real in [0,1).
-    return std::rand() / (RAND_MAX + 1.0);
+    static std::atomic<unsigned> next_seed{0x13579BDFu};
+    thread_local std::mt19937 generator(
+        next_seed.fetch_add(0x9E3779B9u, std::memory_order_relaxed));
+    thread_local std::uniform_real_distribution<double> distribution(0.0, 1.0);
+    return distribution(generator);
 }
 
 inline double random_double(double min, double max) {

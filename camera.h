@@ -15,13 +15,14 @@
 #include <fstream>
 #include <atomic>
 #include <cmath>
-#include <pthread.h>
 #include <cstdlib> // Required for system()
 #include <thread> // used for std::this_thread::sleep_for()
 
 static std::atomic<int> debug_call_id { 0 };
 
 class camera {
+        class ThreadData;
+
   public:
     double aspect_ratio = 1.0;  // Ratio of image width over height
     int    image_width  = 100;  // Rendered image width in pixel count
@@ -61,7 +62,7 @@ class camera {
             // Write pixels directly
             for (int j = 0; j < image_height; ++j) {
                 for (int i = 0; i < image_width; ++i) {
-                    write_color(ppmFile, pixelbuffer[j * image_width + i]);
+                    write_color_checked(ppmFile, pixelbuffer[j * image_width + i], i, j, WorldName.c_str());
                 }
             }
             std::cout << "wrote color to file" << std::endl;
@@ -71,8 +72,9 @@ class camera {
             int startLine = 0;
             int endLine = 0;
             int LinesPerThread = floor(image_height / numThreads);
-            std::vector<ThreadData*> holder;
-            pthread_t threadArray[numThreads];
+            std::vector<std::unique_ptr<ThreadData>> holder;
+            std::vector<std::thread> threadArray;
+            threadArray.reserve(numThreads);
 
             // Launch threads
             for(int i = 0; i < numThreads; i ++) {
@@ -81,10 +83,11 @@ class camera {
                 } else {
                     endLine = startLine + LinesPerThread;
                 }
-                ThreadData* Data = new ThreadData(startLine , endLine , world , pixelbuffer , this , pixel_samples_scale , lights);
-                holder.push_back(Data);
+                auto data = std::make_unique<ThreadData>(startLine , endLine , world , pixelbuffer , this , pixel_samples_scale , lights);
+                ThreadData* Data = data.get();
+                holder.push_back(std::move(data));
 
-                pthread_create(&threadArray[i] , NULL , renderThread , Data);
+                threadArray.emplace_back(renderThreadWrapper, Data);
                 startLine += LinesPerThread;
             }
 
@@ -106,7 +109,6 @@ class camera {
                                 << holder[i]->lines_completed << " out of " << total << " lines\n";
                     }
                 }
-                clearScreen();
                 message << totalCompleted << " out of " << image_height << " lines have been completed overall\n";
                 message << "EST time remaining for " << WorldName << ": ";
 
@@ -130,16 +132,12 @@ class camera {
 
             // Join threads
             for(int i = 0; i< numThreads; i++){
-                pthread_join(threadArray[i], NULL);
+                threadArray[i].join();
             }
-            for (auto x: holder){
-                delete(x);
-            }
-
             // Write pixels after threads complete
             for (int j = 0; j < image_height; ++j) {
                 for (int i = 0; i < image_width; ++i) {
-                    write_color(ppmFile, pixelbuffer[j * image_width + i]);
+                    write_color_checked(ppmFile, pixelbuffer[j * image_width + i], i, j, WorldName.c_str());
                 }
             }
         }
@@ -149,8 +147,23 @@ class camera {
         std::cout << "\r" << WorldName << " is done.                                            \n";
     }
 
-    static void* renderThread(void* arg){
-        ThreadData* info = static_cast<ThreadData*>(arg);
+    static void renderThreadWrapper(ThreadData* info) {
+        try {
+            renderThread(info);
+        } catch (const std::exception& error) {
+            std::cerr << "Worker failed while rendering rows "
+                      << info->start << "-" << (info->stop - 1)
+                      << ": " << error.what() << std::endl;
+            std::terminate();
+        } catch (...) {
+            std::cerr << "Worker failed while rendering rows "
+                      << info->start << "-" << (info->stop - 1)
+                      << ": unknown exception" << std::endl;
+            std::terminate();
+        }
+    }
+
+    static void renderThread(ThreadData* info){
 
         for(int j = info->start; j < info->stop; j ++){
             for(int i = 0; i < info->instance->image_width; i++){
@@ -167,7 +180,6 @@ class camera {
             info->lines_completed++;
         }
 
-        return(NULL);
     }
 
   private:

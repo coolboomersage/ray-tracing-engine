@@ -1,2 +1,5 @@
 .vscode
 build
+/image storage
+*.ppm
+*.png

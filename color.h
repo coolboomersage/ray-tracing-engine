@@ -4,6 +4,8 @@
 #include "vec3.h"
 #include "interval.h"
 
+#include <stdexcept>
+
 using color = vec3;
 
 inline double linear_to_gamma(double linear_component)
@@ -38,6 +40,24 @@ void write_color(std::ostream& out, const color& pixel_color) {
 
     // Write out the pixel color components.
     out << rbyte << ' ' << gbyte << ' ' << bbyte << '\n';
+}
+
+inline void write_color_checked(std::ostream& out, const color& pixel_color, int x, int y, const char* output_name) {
+    try {
+        write_color(out, pixel_color);
+    } catch (const std::exception& error) {
+        std::cerr << "Failed writing pixel (" << x << ", " << y << ") to "
+                  << output_name << ": " << error.what() << std::endl;
+        throw;
+    }
+
+    if (!out) {
+        const std::string message = "Output stream failed after pixel (" +
+            std::to_string(x) + ", " + std::to_string(y) + ")";
+        std::cerr << "Failed writing pixel (" << x << ", " << y << ") to "
+                  << output_name << ": " << message << std::endl;
+        throw std::ios_base::failure(message);
+    }
 }
 
 #endif

@@ -1,0 +1,112 @@
+# GPU Port TODO List
+### Target repo: `coolboomersage/ray-tracing-engine`
+Cross-vendor GPU render pipeline (NVIDIA + AMD), preserving the existing Monte Carlo path tracer and Schwarzschild geodesic (black hole) numerics.
+
+---
+
+## Phase 0 — Setup & API Decision
+
+- [ ] Choose the cross-vendor compute API (Vulkan compute/SPIR-V, SYCL/oneAPI, or HIP) and confirm it has working toolchains for both a target NVIDIA GPU and a target AMD GPU.
+- [ ] Set up a CMake build that compiles both the original CPU path (`camera.h`, `main.cpp`, unchanged) as a reference target, and a new GPU target, so CPU vs. GPU output can always be diffed.
+- [ ] Stand up a minimal "hello triangle/hello kernel" project on both GPUs to validate the toolchain before touching engine code.
+- [ ] Decide the host/device split: keep scene construction, BVH build, image I/O, and PNG conversion on the host (CPU); move only the per-pixel/per-ray inner loop to the GPU.
+
+## Phase 1 — Core Math Types (`vec3.h`, `ray.h`, `interval.h`, `color.h`, `aabb.h`)
+
+- [ ] Port `vec3`/`point3`/`color` to a GPU-compatible struct (plain POD, no inherited STL, mark all member functions with the device-callable qualifier for the chosen API).
+- [ ] Verify `double` precision is supported/performant on the target GPUs; decide whether to keep `double` or drop to `float` for GPU kernels (note: dropping precision will change RK4 geodesic accuracy near the horizon and must be re-validated against the CPU reference).
+- [ ] Port `ray` (origin, direction, time) to a device struct; drop any host-only convenience constructors that rely on `shared_ptr` or STL containers.
+- [ ] Port `interval` and `aabb` (axis-aligned bounding box) to device structs used by BVH traversal.
+- [ ] Port `color.h`'s `write_color`/gamma-correction helper to a host-side function only, since final image write stays on the CPU.
+
+## Phase 2 — Random Number Generation (`rtweekend.h`)
+
+- [ ] Replace the CPU `random_double()` (host RNG, e.g., `<random>`/`rand`) with a GPU-appropriate counter-based PRNG (e.g., PCG32 or Xorshift) that runs entirely on-device.
+- [ ] Seed each thread deterministically from `(pixel_x, pixel_y, sample_index)` so stratified sampling and results are reproducible across runs and comparable to the CPU baseline.
+- [ ] Audit every call site that currently uses `random_double()` on the CPU (camera sampling, defocus disk sampling, material scattering, `constant_medium.h` free-path sampling, `pdf.h` importance sampling) and re-point each to the new device RNG.
+
+## Phase 3 — Scene Representation (`hittable.h`, `hittable_list.h`)
+
+- [ ] Replace the `hittable` virtual base class / `shared_ptr<hittable>` polymorphism with a GPU-friendly representation: either (a) a tagged union/enum-dispatched struct per primitive type, or (b) separate flat arrays per primitive type (SoA) with a type index.
+- [ ] Flatten `hittable_list` into a single contiguous device buffer of primitive records (no linked structures, no pointer chasing).
+- [ ] Port `hit_record` to a plain device struct; replace the `shared_ptr<material> mat` field with a material index into a flat material array (see Phase 5).
+- [ ] Decide how per-primitive PDF sampling (`pdf_value`/`random` used for light sampling) is exposed on GPU without virtual calls — likely a switch on primitive type inside a device function.
+
+## Phase 4 — Geometry Primitives (`sphere.h`, `quad.h`, `tri.h`, `disk.h`)
+
+- [ ] Port each primitive's `hit()` intersection routine to a standalone device function (no class virtual dispatch), one function per primitive type, callable from the flattened traversal in Phase 3.
+- [ ] Port each primitive's bounding-box computation to a device (or host, if computed once at build time and just uploaded) function.
+- [ ] Check `sphere.h` for the moving-sphere/motion-blur case (uses ray `time()`), and confirm the GPU intersection routine still interpolates center position by ray time.
+- [ ] Port `quad.h`/`tri.h` UV-mapping logic for textured quads/triangles into the device intersection function so material lookups still work after the port.
+
+## Phase 5 — Materials & Shading (`material.h`)
+
+- [ ] Replace the `material` virtual base class (`scatter()`, `emitted()`, `scattering_pdf()`) with a tagged-union/enum-dispatched material struct usable in a device function (no vtables on GPU).
+- [ ] Port each concrete material's `scatter()` logic (lambertian, metal, dielectric, isotropic, diffuse light, etc., whichever the repo defines) into per-type device functions selected by the material tag.
+- [ ] Port `emitted()` for emissive materials to a device function.
+- [ ] Port `scattering_pdf()` for each material to a device function, since it feeds directly into the importance-sampling math in Phase 7.
+- [ ] Replace `scatter_record`'s `shared_ptr<pdf>` field (used to select cosine vs. sphere vs. other scatter PDFs) with a tagged enum + device switch, mirroring the material change.
+
+## Phase 6 — Textures (`texture.h`, `perlin.h`, `rtw_stb_image.h`)
+
+- [ ] Replace `texture` virtual base / `shared_ptr<texture>` with a tagged-union texture struct (solid color, checker, noise, image).
+- [ ] Port Perlin noise (`perlin.h`) generation tables to device-readable buffers; port the noise-evaluation function to run on-device without STL/host-only RNG calls.
+- [ ] Port image textures: load images on the host with `rtw_stb_image.h` (unchanged), then upload the pixel data to a GPU texture/buffer and rewrite the sampling function as a device texture fetch instead of host array indexing.
+- [ ] Confirm UV coordinates computed in Phase 4's intersection routines are correctly passed through to the new device texture-sampling functions.
+
+## Phase 7 — Importance Sampling / PDFs (`pdf.h`, `onb.h`)
+
+- [ ] Port `onb` (orthonormal basis) construction/transform to a device struct/function.
+- [ ] Port each concrete PDF (`cosine_pdf`, `hittable_pdf`, `mixture_pdf`, etc.) from virtual-class polymorphism to tagged-union device functions for `value()` and `generate()`.
+- [ ] Port the light-sampling path (`hittable_pdf` sampling the light list, currently `make_shared<hittable_pdf>(lights, rec.p)` per bounce) to use the flattened light list from Phase 3 instead of shared-pointer construction per call.
+- [ ] Confirm the mixture PDF weighting (BSDF pdf + light pdf) produces numerically equivalent results to the CPU version on a simple test scene before moving on.
+
+## Phase 8 — BVH (`bvh.h`)
+
+- [ ] Keep BVH construction on the host (unchanged, or lightly modified) since it's a one-time cost per scene, not part of the per-pixel hot loop.
+- [ ] Replace the CPU BVH's pointer-based left/right child tree with a flattened array representation (e.g., linear BVH with left/right child indices or a threaded BVH) that a GPU kernel can traverse without pointer chasing.
+- [ ] Implement iterative GPU BVH traversal using an explicit stack (local array or shared memory) — recursion should be avoided in the device traversal kernel.
+- [ ] Upload the flattened BVH node array and primitive-index array to device memory as part of scene setup.
+- [ ] Validate GPU BVH traversal returns the same closest-hit primitive/t-value as the CPU BVH on a fixed set of test rays.
+
+## Phase 9 — General Relativity / Black Hole Mode (`geodesic.h`, `blackHole.h`)
+
+- [ ] Port `black_hole` (mass, center, Schwarzschild radius accessor) to a plain device struct.
+- [ ] Port `trace_null_geodesic_schwarzschild()` (the RK4 integrator over the Binet equation `d²u/dφ² = 3Mu² − u`) to a standalone device function, preserving the fixed step size `dphi`, `max_steps`, capture/escape radii, and loop-counting logic exactly as in the CPU version so results are directly comparable.
+- [ ] Port the supporting `plane_basis`/`make_plane_basis`/`plane_to_world` helper functions used by the geodesic integrator to device functions.
+- [ ] Decide kernel structure for GR mode: run the geodesic integration as its own kernel pass (producing a bent ray per GR primary ray) before the standard path-tracing kernels consume it, mirroring the `if (gr_mode && bh && depth == max_depth)` branch in `camera.h`'s `ray_color()`.
+- [ ] Validate the GPU geodesic integrator reproduces the CPU version's capture/escape decision and exit ray direction on a fixed set of test rays aimed at various impact parameters relative to the black hole.
+
+## Phase 10 — Camera & Render Loop (`camera.h`)
+
+- [ ] Replace the pthread-based `render()`/`renderThread()`/`ThreadData` row-partitioning scheme with GPU kernel dispatch across the full image (or tiled dispatch if memory-limited).
+- [ ] Port `initialize()` (viewport/basis vector setup) to run once on the host and upload the resulting camera parameters to device memory.
+- [ ] Port `get_ray()` (including stratified `sample_square_stratified()` and defocus-disk sampling) to a device function used by the ray-generation kernel.
+- [ ] Reformulate the recursive `ray_color()` as an iterative loop within the shading kernel (or as a true multi-kernel wavefront pipeline: ray-gen → intersect → shade → next bounce), since GPU stacks are not well suited to deep, data-dependent recursion.
+- [ ] Port the non-GR and GR branches of `ray_color()` (background lookup, emission, BSDF/light mixture sampling, throughput accumulation) to the device shading function(s), reusing the Phase 5–7 device functions.
+- [ ] Replace the CPU pixel buffer (`std::vector<color>`) with a device buffer; only copy the finished buffer back to host memory once rendering completes (or per tile, if streaming progress is desired).
+- [ ] Decide whether/how to keep the existing progress-reporting loop (`time_left()`/`clearScreen()`, from `timeleft.h`); this can remain host-side, polling a completion counter written by the GPU kernel, or be simplified to a single blocking dispatch + timer for the first working version.
+
+## Phase 11 — Volumetric Media (`constant_medium.h`)
+
+- [ ] Port the constant-medium `hit()` (which samples a random free-flight distance using the device RNG from Phase 2) to a device function callable from the flattened hittable dispatch in Phase 3.
+- [ ] Confirm the medium's density/phase-function material hookup still works through the Phase 5 tagged-union material dispatch.
+
+## Phase 12 — Output & Host-Side I/O (`ppmtopng.h`, `main.cpp`)
+
+- [ ] Keep `ppmtopng.h`'s PPM→PNG conversion (which shells out via `system()`) entirely on the host, run only after the device pixel buffer is copied back.
+- [ ] Update `main.cpp` scene setup to build the flattened/tagged-union scene representations (primitives, materials, textures, lights, BVH) instead of the current `shared_ptr`-based object graph, and to upload them to device memory before invoking the GPU render path.
+- [ ] Add a runtime or build-time switch to choose CPU (existing pthread path, untouched) vs. GPU (new path) rendering, so the CPU implementation remains available as the numerical reference.
+
+## Phase 13 — Validation & Correctness
+
+- [ ] Build a small fixed test-scene set (one ordinary Monte Carlo scene, one GR/black-hole scene) rendered at matched resolution, sample count, and RNG seeding strategy on CPU, NVIDIA GPU, and AMD GPU.
+- [ ] Compare GPU output against the CPU reference image with MSE/PSNR/SSIM; confirm differences stay within the expected Monte Carlo noise floor.
+- [ ] Add a dedicated unit test (or standalone driver) comparing the CPU and GPU geodesic integrators ray-by-ray on a batch of fixed input directions, independent of the full render pipeline.
+- [ ] Confirm NVIDIA and AMD outputs agree with each other as closely as they each agree with the CPU reference (rules out a vendor-specific bug rather than an expected CPU/GPU numerical difference).
+
+## Phase 14 — Performance Tuning (after correctness is established)
+
+- [ ] Profile kernel occupancy, memory coalescing, and divergence (particularly BVH traversal and the material tagged-union switch, which are the most divergence-prone parts of the port).
+- [ ] Measure and record render time and rays/second on CPU (varying thread count), NVIDIA GPU, and AMD GPU for the test scenes, and compute the speedup ratio vs. the CPU baseline.
+- [ ] Tune tile/workgroup size, shared-memory usage in BVH traversal, and kernel fusion (e.g., combining ray-gen and first intersection) once correctness is locked in.

@@ -18,9 +18,12 @@ void convertppm(std::string Name){
         std::cerr << "Failed to load image: " << inputPath << std::endl;
     }
 
+    std::cout << "attempting to save image as: " << outputPath << std::endl;
     // Save the image as PNG
     if (!cv::imwrite(outputPath, image)) {
         std::cerr << "Failed to save image as PNG: " << outputPath << std::endl;
+    } else {
+        std::cout << "output image saved as: " << outputPath << std::endl;
     }
 }
 

@@ -70,7 +70,14 @@ int main() {
     std::cout << "press any key to continue to rendering\n";
     getch();
 
-    cam.render(world , lights, "black_hole_testing");
+    try {
+        cam.render(world, lights, "black_hole_testing");
+    } catch (const std::exception& error) {
+        std::cerr << "Rendering terminated: " << error.what() << std::endl;
+        return EXIT_FAILURE;
+    }
+
+    return EXIT_SUCCESS;
 }
 
 /*/
