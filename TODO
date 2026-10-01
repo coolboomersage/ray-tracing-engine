@@ -6,7 +6,11 @@ Cross-vendor GPU render pipeline (NVIDIA + AMD), preserving the existing Monte C
 
 ## Phase 0 — Setup & API Decision
 
-- [ ] Choose the cross-vendor compute API (Vulkan compute/SPIR-V, SYCL/oneAPI, or HIP) and confirm it has working toolchains for both a target NVIDIA GPU and a target AMD GPU.
+- [/] Choose the cross-vendor compute API (Vulkan compute/SPIR-V, SYCL/oneAPI, or HIP) and confirm it has working toolchains for both a target NVIDIA GPU and a target AMD GPU.
+
+    Vulkan will be used due to its compatability and simplicity
+
+    
 - [ ] Set up a CMake build that compiles both the original CPU path (`camera.h`, `main.cpp`, unchanged) as a reference target, and a new GPU target, so CPU vs. GPU output can always be diffed.
 - [ ] Stand up a minimal "hello triangle/hello kernel" project on both GPUs to validate the toolchain before touching engine code.
 - [ ] Decide the host/device split: keep scene construction, BVH build, image I/O, and PNG conversion on the host (CPU); move only the per-pixel/per-ray inner loop to the GPU.

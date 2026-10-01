@@ -187,6 +187,9 @@ int main(int argc, char** argv) {
 }
 
 /*/
+
+    //CODE FOR CORNELL BOX SCENE
+
     hittable_list world;
 
     auto red   = make_shared<lambertian>(color(.65, .05, .05));
@@ -236,4 +239,64 @@ int main(int argc, char** argv) {
     cam.vup      = vec3(0, 1, 0);
 
     cam.defocus_angle = 0;
+
+
+
+    // CODE FOR GEODESIC SCENE
+    hittable_list world;
+    camera cam;
+
+    cam.aspect_ratio      = 1.0;
+    cam.image_width       = 4000;
+    cam.samples_per_pixel = 50;
+    cam.max_depth         = 50;
+    cam.background        = color(1,1,1);
+
+    cam.vfov     = 40;
+    cam.lookfrom = point3(5 , 15 , -60);
+    cam.lookat   = point3(0 , 5 , 0);
+    cam.vup      = vec3(0, 1, 0);
+
+    
+    cam.defocus_angle = 0;
+
+    cam.gr_mode = true;
+
+    cam.numThreads = 16;
+
+    try {
+        parse_camera_options(argc, argv, cam);
+    } catch (const std::exception& error) {
+        std::cerr << "Argument error: " << error.what() << "\n";
+        print_usage(argv[0]);
+        return EXIT_FAILURE;
+    }
+
+    
+    //materials and textures
+    auto red   = make_shared<lambertian>(color(.65, .05, .05));
+    auto check = make_shared<checker_texture>(100, color(1,0,0), color(0,0,1));
+    auto light = make_shared<diffuse_light>(color(15, 15, 15));
+    auto empty_material = shared_ptr<material>();
+
+    //world ground
+    world.add(make_shared<sphere>(point3(0,-1000,0), 1000, make_shared<lambertian>(check)));
+
+    // black hole
+    auto holePTR = make_shared<black_hole>(point3(0,5,0), 0.5 , 0.5);
+    if (!cam.gr_mode) {
+        world.add(holePTR); // only include BH as a hittable if not bending
+    }
+
+    //light sources
+    world.add(make_shared<quad>(point3(-5 , 20 , -5) , vec3(10 , 0 , 0) , vec3(0 , 0 , 10) , light));
+
+    hittable_list lights;
+    lights.add(make_shared<quad>(point3(5 , 20 , 5), vec3(-10 , 0 , 0), vec3( 0 , 0 , -10), empty_material));
+
+    //file import
+    //world.addFromFile("models/chest.obj" , 0.1 , {0 , 0 , 0} , {0 , -45 , 0});
+    //world.addFromFile("models/bow.fbx" , 0.1 , {9 , 0 , 0} , {0 , 0 , 0});
+
+    cam.bh = holePTR.get();
 */
