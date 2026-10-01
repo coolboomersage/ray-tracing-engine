@@ -76,19 +76,24 @@ class camera {
             std::vector<std::thread> threadArray;
             threadArray.reserve(numThreads);
 
-            // Launch threads
-            for(int i = 0; i < numThreads; i ++) {
-                if (i == numThreads - 1) {
-                    endLine = image_height;
-                } else {
-                    endLine = startLine + LinesPerThread;
-                }
-                auto data = std::make_unique<ThreadData>(startLine , endLine , world , pixelbuffer , this , pixel_samples_scale , lights);
-                ThreadData* Data = data.get();
-                holder.push_back(std::move(data));
+            try {
+                for (int i = 0; i < numThreads; i ++) { // Launch threads
+                    if (i == numThreads - 1) {
+                        endLine = image_height;
+                    } else {
+                        endLine = startLine + LinesPerThread;
+                    }
+                    auto data = std::make_unique<ThreadData>(startLine , endLine , world , pixelbuffer , this , pixel_samples_scale , lights);
+                    ThreadData* Data = data.get();
+                    holder.push_back(std::move(data));
 
-                threadArray.emplace_back(renderThreadWrapper, Data);
-                startLine += LinesPerThread;
+                    threadArray.emplace_back(renderThreadWrapper, Data);
+                    startLine += LinesPerThread;
+                }
+            } catch (const std::exception& e) {
+                std::cerr << "Thread launch failed: " << e.what() << "\n";
+                for (auto& t : threadArray) if (t.joinable()) t.join();
+                throw;
             }
 
             // Poll thread progress
@@ -100,20 +105,28 @@ class camera {
                 std::this_thread::sleep_for(std::chrono::milliseconds(500)); // poll each 0.5s
 
                 int totalCompleted = 0;
+                std::vector<int> linesPerThread;
+                std::vector<int> completedPerThread;
+                linesPerThread.reserve(numThreads);
+                completedPerThread.reserve(numThreads);
                 for (int i = 0; i < numThreads; ++i) {
                     int total = holder[i]->stop - holder[i]->start;
-                    totalCompleted += holder[i]->lines_completed;
+                    int completed = holder[i]->lines_completed.load();
+                    linesPerThread.push_back(total);
+                    completedPerThread.push_back(completed);
+                    totalCompleted += completed;
 
-                    if(holder[i]->lines_completed != total){
+                    if(completed != total){
                         message << "Thread " << i << " has completed "
-                                << holder[i]->lines_completed << " out of " << total << " lines\n";
+                                << completed << " out of " << total << " lines\n";
                     }
                 }
                 message << totalCompleted << " out of " << image_height << " lines have been completed overall\n";
                 message << "EST time remaining for " << WorldName << ": ";
 
                 // Estimate time
-                double seconds = time_left(startTime, currentTime, image_height, totalCompleted).count();
+                currentTime = std::chrono::steady_clock::now();
+                double seconds = time_left(startTime, currentTime, linesPerThread, completedPerThread).count();
                 int hrs = static_cast<int>(seconds) / 3600;
                 int mins = (static_cast<int>(seconds) % 3600) / 60;
                 int secs = static_cast<int>(seconds) % 60;
@@ -123,7 +136,6 @@ class camera {
                 message << std::fixed << std::setprecision(2) << secs + fractional << "s\n";
 
                 std::cout << message.str();
-                currentTime = std::chrono::steady_clock::now();
 
                 if (totalCompleted == image_height){
                     allDone = true;
@@ -131,15 +143,19 @@ class camera {
             }
 
             // Join threads
+            //std::fprintf(stderr, "[stage] polling done, joining\n");
             for(int i = 0; i< numThreads; i++){
                 threadArray[i].join();
+                //std::fprintf(stderr, "[stage] joined %d\n", i);
             }
             // Write pixels after threads complete
+            //std::fprintf(stderr, "[stage] writing pixels\n");
             for (int j = 0; j < image_height; ++j) {
                 for (int i = 0; i < image_width; ++i) {
                     write_color_checked(ppmFile, pixelbuffer[j * image_width + i], i, j, WorldName.c_str());
                 }
             }
+            //std::fprintf(stderr, "[stage] pixels written\n");
         }
 
         ppmFile.close();  
